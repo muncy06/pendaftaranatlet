@@ -1,0 +1,13 @@
+CREATE DATABASE pencak_silat_db;
+
+USE pencak_silat_db;
+
+CREATE TABLE atlet (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(255) NOT NULL,
+    usia INT NOT NULL,
+    kelas VARCHAR(50) NOT NULL,
+    kontingen VARCHAR(255) NOT NULL,
+    no_hp VARCHAR(15) NOT NULL,
+    tanggal_daftar TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
